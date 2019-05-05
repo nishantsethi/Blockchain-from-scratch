@@ -48,3 +48,10 @@ class Blockchain:
                 previous_block = block
                 block_index +=1
             return True
+
+# Mining
+app =Flask(__name__)
+
+blockchain = Blockchain()
+
+@app.route('/mine_block', methods = ['GET'])
