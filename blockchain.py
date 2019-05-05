@@ -56,6 +56,7 @@ class Blockchain:
 # Mining
 app =Flask(__name__)
 
+# Y
 blockchain = Blockchain()
 
 @app.route('/mine_block', methods = ['GET'])
